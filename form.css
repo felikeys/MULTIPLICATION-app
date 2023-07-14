@@ -1,19 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+
+:root {
+    --header: #909537;
+    --backgroundColor: #F6F6E8;
+    --title: #2C6B40;
+    --productText: #5B5C52;
+    --placeHolder: #0B2627;
+}
+
 * {
     margin: 0;
     box-sizing: border-box;
+    padding: 0;
 }
 
-/* .container {
-   margin-top: 256px;
-} */
 
-.purchased-container {
-    
+body {
+    background-color: var(--backgroundColor);
+    /* overflow-y: hidden; */
 }
 
+.container {
+   margin-top: 20px;
+}
+
+.butterlush-image{
+    height: 661px;
+}
+
+.butterlush-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+    /* filter: contrast(180%); */
+}
+
+.title h1{
+    color: var(--header);
+    text-transform: uppercase;
+    font-family: 'Josefin Sans' sans-serif;
+    font-size: 25px;
+    font-style: bold;
+}
 
 
 .title {
     display: flex;
     justify-content: center;
+    
+    /* background-color: blue; */
+}
+
+.form{
+    margin-top: 40px;
 }

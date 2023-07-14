@@ -7,16 +7,9 @@
     <title>BUTTERLUSH ORDER SHEET</title>
 </head>
 <body>
-    <header class="header">
-        <img src="" alt="Butterlush-logo">
-
-        <!-- navigational bar -->
-        <nav class="nav-list">
-            <span>Email</span>
-            <span>Contact</span>
-            <span>Info</span>
-        </nav>
-    </header>
+<div class="butterlush-image">
+   <img src="./images/background-image.jpg" alt="butterlush-image"> 
+</div>
 
     <!-- background image -->
     <div class="background-image"></div>
@@ -27,23 +20,34 @@
             <div class="title">
                 <h1>Butterlush Bodycare Order Sheet</h1>
             </div>
-            <div class="order">
-                <p>Order</p>
-                <p>Quantity</p>
-            </div>
-            
-            <div class="item-purchased">
-                <div class="item">
-                    Chocolate
-                </div>
-            </div>
-            <div class="item-purchased">
-                <div class="item">
-                    lip bum
-                </div>
+
+            <!-- Form -->
+            <div class="form">
+            <form action="" method="post">
+                <label for="name">Name: <input type="text" id="name"></label>
+                <label for="contact">Contact Number: <input type="text" id="contact"></label>
+                <label for="product">
+                    Product <input type="text" placeholder="eg: coffee bodybutter meduim" id="product" required>
+                </label>
+                <label for="quantity">
+                    Quantity: <input type="number" id="quantity">
+                </label>
+                <label for="date">Date of delivery:
+                    <input type="date" name="delivery date" id="date">
+                     <p>delievery at a fee</p>
+                     <p>pickup from shiashie</p>
+                </label>
+            </form>
             </div>
         </div>
     </section>
+
+    <!-- detials needed -->
+    <footer class="details">
+        <span>Contact</span>
+        <span>email</span>
+        <span>Info</span>
+    </footer>
     
 </body>
 </html>
