@@ -7,6 +7,7 @@
     --title: #2C6B40;
     --productText: #5B5C52;
     --placeHolder: #0B2627;
+    --text: chocolate;
 }
 
 * {
@@ -53,6 +54,44 @@ body {
     /* background-color: blue; */
 }
 
-.form{
-    margin-top: 40px;
+label {
+    /* padding: 12px 12px 12px 0; */
+    display: inline-block;
+  }
+
+.col-25 {
+    width: 25%;
+    float: left;
+    margin-top: 20px;
+}
+
+.col-75 {
+    width: 75%;
+    float: left;
+    margin-top: 20px;
+}
+
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+input[type=text], [type=number], [type=date]{
+    width: 50%;
+    padding: 6px;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.form {
+    margin-left: 120px;
+    /* background-color: darkgrey; */
+}
+
+.fill-forms{
+    color:#909537;
+    font-size: 18px;
+    font-family: 'Josefin Sans' sans-serif;
+    font-style: oblique;
 }

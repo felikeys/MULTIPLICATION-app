@@ -23,17 +23,47 @@
 
             <!-- Form -->
             <div class="form">
-            <form action="" method="post">
-                <label for="name">Name: <input type="text" id="name"></label>
-                <label for="contact">Contact Number: <input type="text" id="contact"></label>
-                <label for="product">
-                    Product <input type="text" placeholder="eg: coffee bodybutter meduim" id="product" required>
-                </label>
-                <label for="quantity">
-                    Quantity: <input type="number" id="quantity">
-                </label>
-                <label for="date">Date of delivery:
-                    <input type="date" name="delivery date" id="date">
+            <form action="" method="post" id="form">
+                <div class="row">
+                    <div class="col-25">
+                        <label class="fill-forms" for="name">Name:  </label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="name">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label class="fill-forms" for="contact">Contact:  </label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="contact">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label class="fill-forms" for="product">Product:  </label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" placeholder="eg: coffee bodybutter meduim" id="product" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="quantity" class="fill-forms">Quantity: </label>
+                    </div>
+                    <div class="col-75">
+                        <input type="number" id="quantity">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="date" class="fill-forms">Date of delivery: </label>
+                    </div>
+                    <div class="col-75">
+                        <input type="date" name="delivery date" id="date">
+                    </div>
+                </div>
                      <p>delievery at a fee</p>
                      <p>pickup from shiashie</p>
                 </label>
