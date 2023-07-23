@@ -11,32 +11,40 @@
 }
 
 * {
-    margin: 0;
+    /* margin: 0; */
     box-sizing: border-box;
-    padding: 0;
+    /* padding: 0; */
 }
 
 
-body {
-    background-color: var(--backgroundColor);
-    /* overflow-y: hidden; */
+body ,html{
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.background-image {
+    background-image: url('./images/background-image.jpg');
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container {
-   margin-top: 20px;
-}
-
-.butterlush-image{
-    height: 661px;
-}
-
-.butterlush-image img{
+   position: absolute;
+   background-color: rgb(0,0,0);
+   background-color: rgba(0,0,0, 0.4); 
+   /* border: 3px solid #f1f1f1; */
+   
+   top: 0;
+    left: 0;
+    z-index: 2;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: left;
-    /* filter: contrast(180%); */
+    height: inherit;
 }
+
 
 .title h1{
     color: var(--header);
@@ -50,8 +58,7 @@ body {
 .title {
     display: flex;
     justify-content: center;
-    
-    /* background-color: blue; */
+   /* background-color: blue; */
 }
 
 label {
@@ -60,13 +67,13 @@ label {
   }
 
 .col-25 {
-    width: 25%;
+    width: 15%;
     float: left;
     margin-top: 20px;
 }
 
 .col-75 {
-    width: 75%;
+    width: 85%;
     float: left;
     margin-top: 20px;
 }
@@ -78,10 +85,45 @@ label {
 }
 
 input[type=text], [type=number], [type=date]{
-    width: 50%;
+    width: 70%;
     padding: 6px;
     border-radius: 4px;
+    background-color: #5B5C52;
     resize: vertical;
+}
+
+input[type=number]{
+    color: #F6F6E8;
+}
+
+input[type=text]{
+    color: #F6F6E8;
+}
+
+input[type=date] {
+    color: #F6F6E8;
+}
+
+input::placeholder{
+    color: #F6F6E8
+}
+
+.submit {
+    width: 85%;
+    float: right;
+    margin-top: 20px;
+
+    /* background-color: #0B2627; */
+}
+
+input[type=button]{
+    width: 70%;
+    padding: 6px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    font-size: inherit;
+    background-color: #3c4207;
+    color: #0B2627;
 }
 
 .form {
@@ -95,3 +137,41 @@ input[type=text], [type=number], [type=date]{
     font-family: 'Josefin Sans' sans-serif;
     font-style: oblique;
 }
+
+.info {
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    width: 595px;
+    /* height: 200px; */
+}
+
+.pickup {
+    display: flex;
+    justify-content: space-between;
+}
+
+.txt{
+    color: #F6F6E8;
+    font-style: italic;
+}
+
+.details {
+    color: aqua;
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+}
+
+.circle-logo img {
+    border-radius: 50%;
+    width: 97px;
+    height: 97px;
+  }
+
+  .circle-logo {
+    position: absolute;
+    bottom: 10%;
+    left: 2%;
+  }
+
