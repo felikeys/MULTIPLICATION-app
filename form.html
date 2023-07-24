@@ -50,7 +50,7 @@
                         <label for="quantity" class="fill-forms">Quantity: </label>
                     </div>
                     <div class="col-75">
-                        <input type="number" id="quantity">
+                        <input type="number" min="0" id="quantity">
                     </div>
                 </div>
                 <div class="row">
@@ -61,31 +61,49 @@
                         <input type="date" name="delivery date" id="date">
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="pickup" class="pickup">Pickup system:</label>
+                    </div>
+                    <div class="col-75">
+                        <select name="pickup" id="pickup">
+                            <option value="value1">select</option>
+                            <option value="value2">pickup from shiashie</option>
+                            <option value="value3">delivery at a fee</option>
+                          </select>
+                    </div>
+                </div>
+                
                     <div class="submit">
                         <input type="button" value="Submit">
-                    </div>
+                    </div>                      
             </form>
             </div>
         </div>
         <div class="info">
             <div class="pickup">
-                <span class="txt">delievery at a fee</span>
-                <span class="txt">pickup from shiashie</span>
+                <span class="txt"></span>
+                <span class="txt"></span>
             </div>
             
         </div>
-        <div class="circle-logo">
-            <img src="./images/butterlush-logo.jpg" alt="butterlush-logo"> 
+        <div class="footer">
+            <div class="details">
+                <div class="circle-logo">
+                    <img src="./images/butterlush-logo.jpg" alt="butterlush-logo"> 
+                </div>
+                
+                <div class="info">
+                    <p>Contact: 0503143448</p>
+                    <p>email:
+                        <a href="felixnkrumah567@gmail.com">Felixnkrumah567@gmail.com</a>
+                    </p> 
+                </div>
+            </div>
+            
         </div>
-        
-        <footer class="details">
-            <span>Contact</span>
-            <span>email</span>
-            <span>Info</span>
-        </footer>
+       
     </section>
-
-    <!---detials needed -->
       
     
 </body>

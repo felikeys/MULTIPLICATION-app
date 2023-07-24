@@ -2,12 +2,12 @@
 
 
 :root {
-    --header: #909537;
     --backgroundColor: #F6F6E8;
-    --title: #2C6B40;
+    --title: #F6F6E8;
     --productText: #5B5C52;
     --placeHolder: #0B2627;
-    --text: chocolate;
+    --text: #A02929;
+    
 }
 
 * {
@@ -20,6 +20,7 @@
 body ,html{
     height: 100%;
     overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .background-image {
@@ -47,7 +48,7 @@ body ,html{
 
 
 .title h1{
-    color: var(--header);
+    color: var(--title);
     text-transform: uppercase;
     font-family: 'Josefin Sans' sans-serif;
     font-size: 25px;
@@ -108,6 +109,10 @@ input::placeholder{
     color: #F6F6E8
 }
 
+#name, #quantity, #product, #contact, #date{
+    color: var(--text);
+}
+
 .submit {
     width: 85%;
     float: right;
@@ -126,13 +131,29 @@ input[type=button]{
     color: #0B2627;
 }
 
+select {
+    /* width: 690px; */
+    height: 32px;
+    width: 70%;
+    padding: 6px;
+    border-radius: 4px;
+    background-color: #5B5C52;
+    resize: vertical;
+}
+
+.pickup {
+    color: var(--title);
+    font-style: italic;
+    font-size: 18px;
+}
+
 .form {
     margin-left: 120px;
     /* background-color: darkgrey; */
 }
 
 .fill-forms{
-    color:#909537;
+    color: var(--title);
     font-size: 18px;
     font-family: 'Josefin Sans' sans-serif;
     font-style: oblique;
@@ -157,21 +178,43 @@ input[type=button]{
 }
 
 .details {
-    color: aqua;
-    position: absolute;
-    bottom: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    /* background-color: #F6F6E8; */
     width: 100%;
+    height: 100%;
+}
+
+p{
+    color: var(--text);
 }
 
 .circle-logo img {
     border-radius: 50%;
-    width: 97px;
-    height: 97px;
+    width: 40px;
+    height: 40px;
   }
 
   .circle-logo {
     position: absolute;
-    bottom: 10%;
-    left: 2%;
+    left: 1%;
+    bottom: 18%;
   }
+
+  .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer {
+    background-color: #0B2627;
+    height: 70px;
+    width: 100%;
+    position: absolute;
+    bottom: 0; 
+  }
+
+
 
